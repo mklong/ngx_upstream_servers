@@ -1,13 +1,18 @@
 # ngx_upstream_servers
 Sometimes,command "server" is not easy to manage cluster,this is a useful patch.
 
+---------------------------------------------------------------------------------
 examlpe:
 
 upsthream app1_cluster{
     ip_hash;
+    
     server  192.168.20.20:2000;
+    
     server  192.168.20.21:2000;
+    
     server  192.168.20.22:2000;
+    
     ...
 }
 
@@ -41,4 +46,9 @@ upsthream app2_cluster{
     servers app_cluster;
 }
 ...
+
+------------------------------------------------------------------------------
+
+
+
 
