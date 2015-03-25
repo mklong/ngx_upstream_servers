@@ -14,7 +14,7 @@ CN:
 examlpe:
 
 
-upsthream app1_cluster{
+upstream app1_cluster{
 
     ip_hash;
     
@@ -58,7 +58,7 @@ upstream app_cluster{
   
 }
 
-upsthream app1_cluster{
+upstream app1_cluster{
 
     ip_hash;
     
@@ -68,7 +68,7 @@ upsthream app1_cluster{
     
 }
 
-upsthream app2_cluster{
+upstream app2_cluster{
 
     ip_hash;
     
